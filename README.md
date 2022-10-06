@@ -9,14 +9,20 @@ nvm install 14.7.0
 nvm use 14
 
 ```
-pull the code
+**pull the code**
 ```
 git init
 git pull https://github.com/Ginfine/IT5007Project-RuntimeTerror.git ipfs
 ```
-install packages and run the demo
+ 
+ **fill in the infura project id and project secret in file:src/App.js**
+ ```
+ const projectId = '';
+const projectSecret = '';
 ```
-cd ipfs_demo
+
+**install packages and run the demo**
+```
 cd ipfs-example
 rm -rf package-lock.json 
 npm install
