@@ -5,8 +5,8 @@ import { create } from 'ipfs-http-client';
 import { Buffer } from 'buffer';
 
 
-const projectId = '2FkyHPh8Mb5heUcZyZZUxSWAd3f';
-const projectSecret = '7c5e1528bce5c9df3162634db67dedb7';
+const projectId = '';
+const projectSecret = '';
 const auth =
     'Basic ' + Buffer.from(projectId + ':' + projectSecret).toString('base64');
 
