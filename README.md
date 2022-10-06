@@ -28,3 +28,7 @@ rm -rf package-lock.json
 npm install
 npm run
 ```
+
+**upload demo**
+
+![image](https://user-images.githubusercontent.com/39360847/194340003-043732df-5a0c-405c-be33-35facf31c1c5.png)
