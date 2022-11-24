@@ -15,6 +15,7 @@ git init
 git pull https://github.com/Ginfine/IT5007Project-RuntimeTerror.git maincode
 ```
 **run the code**
+Please keep running the three things below.(backend,database,frontend)
 ```
 cd api
 npm install
