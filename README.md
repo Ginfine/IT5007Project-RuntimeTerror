@@ -1,4 +1,4 @@
-# IT5007Project-RuntimeTerror ipfs demo
+# IT5007Project-RuntimeTerror
 
 **instructions**
 If you use docker ,please expose the port 3000(for the frontend) and 3333(for the database).
