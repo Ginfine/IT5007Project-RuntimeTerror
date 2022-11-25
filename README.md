@@ -19,13 +19,20 @@ Please keep running the three things below.(backend,database,frontend)
 ```
 cd api
 npm install
+mkdir public
 npm start
 
 cd database
-npm install
+nvm install 18
+nvm use 18
+npm install -g@sanity/cli
+sanity install
+sanity init
+(login by google and choose runtimeterror)
+
 sanity start --host=0.0.0.0
 
-cd fronend
+cd frontend
 npm install
 npm run
 ```
