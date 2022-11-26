@@ -115,7 +115,8 @@ functions.getPostsOfFollowing = (username) => {
         photo{
           asset->{
             _id,
-            url
+            url,
+            
           }
         }
       }

@@ -10,7 +10,7 @@ import Login from "./Login";
 import Profile from "./Profile";
 import Search from "./Search";
 import SignUp from "./SignUp";
-
+import ExploreAllPosts from "./Explore";
 function App(){
     const [alert, setAlert] = useState(null);
     const [user, setUser] = useState("");
@@ -27,6 +27,7 @@ function App(){
             <Navbar.Toggle />
             <Navbar.Collapse>
                 <Nav className="me-auto">
+                  <LinkContainer to="/explore"><Nav.Link>Explore</Nav.Link></LinkContainer>
                     <LinkContainer to="/"><Nav.Link>HomePage</Nav.Link></LinkContainer>
                     <LinkContainer to="/search"><Nav.Link>Search</Nav.Link></LinkContainer>
                     <LinkContainer to="/create-post"><Nav.Link>Post</Nav.Link></LinkContainer>
@@ -63,6 +64,7 @@ function App(){
           <AlertDismissible {...alert} deleteAlert={() => setAlert(null)} />
         ) : null}
         <Routes>
+            <Route element={<ExploreAllPosts user={user} />} path="/explore" exact />
             <Route element={<AllPosts user={user} />} path="/" exact />
             <Route element={<Login setAlert={setAlert} setUser={setUser}/>} path="/login" />
             <Route element={<SignUp setAlert={setAlert} setUser={setUser}/>} path="/sign-up" />
