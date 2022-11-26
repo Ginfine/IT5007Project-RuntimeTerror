@@ -7,10 +7,10 @@ export default function AllPosts({ user }) {
   const [allPostsData, setAllPosts] = useState(null);
   useEffect(() => {
     if (!user) {
-      fetch("/getAllPosts")
-        .then((res) => res.json())
-        .then((data) => setAllPosts(data))
-        .catch((err) => console.error(err));
+      // fetch("/getAllPosts")
+      //   .then((res) => res.json())
+      //   .then((data) => setAllPosts(data))
+      //   .catch((err) => console.error(err));
     } else {
       fetch("/getPostsOfFollowing?user=" + user)
         .then((res) => res.json())
